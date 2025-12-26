@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
+    "dev:dev": "env-cmd -f .env.dev next dev",
+    "dev:prod": "env-cmd -f .env.prod next dev",
     "build": "next build --turbopack",
     "start": "next start"
   },
@@ -17,6 +19,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "env-cmd": "^11.0.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
